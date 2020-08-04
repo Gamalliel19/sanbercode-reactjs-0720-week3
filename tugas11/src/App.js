@@ -1,11 +1,15 @@
 import React from 'react';
 import './App.css';
-import UserInfo from './UserInfo'  
+import DaftarBuah from './tugas11/DaftarBuah'
+import Timer from './tugas12/Timer'
+
 
 function App() {
   return (
     <div className="App">
-      <UserInfo />
+      <h1>Tabel Harga Buah</h1>
+      <DaftarBuah />
+      <Timer />
     </div>
   );
 }
