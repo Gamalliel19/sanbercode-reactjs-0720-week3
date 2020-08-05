@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <h1>Tabel Harga Buah</h1>
       <DaftarBuah />
-      <Timer />
+      <Timer start={10} />
     </div>
   );
 }
