@@ -2,14 +2,14 @@ import React from 'react';
 import './App.css';
 import DaftarBuah from './tugas11/DaftarBuah'
 import Timer from './tugas12/Timer'
-
+import Lists from './tugas13/lists'
 
 function App() {
   return (
     <div className="App">
       <h1>Tabel Harga Buah</h1>
-      <DaftarBuah />
-      <Timer start={10} />
+    
+      <Lists />
     </div>
   );
 }
