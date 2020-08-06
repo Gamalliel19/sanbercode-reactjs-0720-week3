@@ -4,7 +4,7 @@ class Timer extends Component{
   constructor(props){
     super(props)
     this.state = {
-      time: 0,
+      time: 100,
       date: new Date()
     }
   }
@@ -19,12 +19,6 @@ class Timer extends Component{
     );
   }
 
-  componentDidUpdate(){
-      if(this.state.time === 60){
-          
-      }
-  }
-
   componentWillUnmount(){
     clearInterval(this.timerID);
   }
@@ -32,31 +26,26 @@ class Timer extends Component{
   tick() {
     this.setState({
       time: this.state.time - 1,
-      date: new Date() 
+      date: new Date()
     });
   }
+
 
   render(){
     return(
       <>
-      {
-        this.state.time >= 0 && (
-        <>
+      {this.state.time>=0 &&
+        <div id="textbox">
+        <h1 style={{float: "left", width:"50%",textAlign:"center"}}>
+        {"sekarang jam : "+this.state.date.toLocaleTimeString()}</h1>
         
-          <h1 style={{float:"left"}}>
-          Sekarang jam - {this.state.date.toLocaleDateString()}
-          </h1>
-          <h1 style={{float:"right"}}>
-          hitung mundur: {this.state.time}
-          </h1>
-
-        </>
-        )
+        <h1 style={{float: "left", width:"50%",textAlign:"center"}}>
+        {"hitung mundur: "+this.state.time}</h1>
+        </div>
       }
-        
       </>
     )
   }
 }
 
-export default Timer
+export default Timer;
