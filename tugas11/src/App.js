@@ -8,8 +8,9 @@ function App() {
   return (
     <div className="App">
       <h1>Tabel Harga Buah</h1>
-    
-      <Lists />
+      <Timer/>
+      <Lists/>
+      <DaftarBuah/>
     </div>
   );
 }
