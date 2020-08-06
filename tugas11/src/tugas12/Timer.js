@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-
+// tugas
 class Timer extends Component{
   constructor(props){
     super(props)
