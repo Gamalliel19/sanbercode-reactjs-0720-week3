@@ -33,17 +33,13 @@ let dataHargaBuah = [
           {dataHargaBuah.map(el=> {
             return (
               <table style={{padding:"20px", margin:"20px auto"}}>
-                  <tr>
-                      <th>
-                          Nama
-                      </th>
-                      <th>
-                          Harga
-                      </th>
-                      <th>
-                          Berat
-                      </th>
-                  </tr>
+                  <thead>
+                      <tr> 
+                      <th>Nama</th>
+                      <th>Harga</th>
+                      <th>Berat</th>
+                      </tr>
+                  </thead>
                   <tr>
                       <td>
                           <NamaBuah nama={el.nama}/>
