@@ -7,6 +7,7 @@ import DaftarHargaBuah2 from "../tugas13/lists";
 import DaftarHargaBuah3 from "../tugas14/tugas14";
 import DaftarHargaBuah4 from "../tugas15/Buah";
 
+
 const Routes = () =>{
     return(
         <>
